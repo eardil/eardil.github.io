@@ -1,5 +1,11 @@
-
-# Part 1. The miracle of birth
+---
+layout:     post
+title:      "Part 1. The miracle of birth"
+subtitle:   "On the whys"
+date:       2014-06-10 12:00:00
+author:     "Start Bootstrap"
+header-img: "img/post-bg-01.jpg"
+---
 
 Im not a savvy programmer. My background is in applied math and I'm mainly interested in data analysis, probability, combinatorics and linear optimization. Most of these disciplines require programming, but I prefer to concentrate more efforts in model design than in algorithm development.
 
