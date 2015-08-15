@@ -2,7 +2,7 @@
 layout:     post
 title:      "Part 1. The miracle of birth"
 subtitle:   "On the whys"
-date:       2014-06-10 12:00:00
+date:       2015-08-15 12:00:00
 author:     "Start Bootstrap"
 header-img: "img/post-bg-01.jpg"
 ---
