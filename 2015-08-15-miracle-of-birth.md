@@ -11,25 +11,9 @@ So my mind turned to this thing called Python that I had read that is a thing --
 
 I began searching for the best approach and decided to watch the nice history lesson from Scipy 2015 conference given by Jake VanderPlas in July --awesome timing.
 
-
-    from IPython.display import YouTubeVideo
-    YouTubeVideo('5GlNDD7qbP4')
-
-
-
-
-
-        <iframe
-            width="400"
-            height="300"
-            src="https://www.youtube.com/embed/5GlNDD7qbP4"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
-        
-
-
-
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=5GlNDD7qbP4
+" target="_blank"><img src="http://img.youtube.com/vi/5GlNDD7qbP4/0.jpg" 
+alt="Keynote SciPy 2015" width="240" height="180" border="10" /></a>
 
 It catched my attention the enfasis on Python as a MATLAB killer wannabe by the creators of some of the libraries.
 
@@ -43,4 +27,4 @@ Really, that's it. You just install the distribution, start `IPython Notebook` a
     Hello Python!!
     
 
-Since I'm not really interested in `Python` as a programming language but as a scientific tool --for now--, in the next post I'll go directly into some libraries and start working on a problem.
+Since --for now-- I'm not really interested in `Python` as a programming language but as a scientific tool, in the next post I'll go directly into some libraries and start working on a problem.
