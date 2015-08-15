@@ -1,10 +1,10 @@
 ---
-layout:     post
-title:      "Part 1. The miracle of birth"
-subtitle:   "On the whys"
-date:       2015-08-15
-author:     "Eärdil"
-header-img: "img/post-bg-01.jpg"
+layout: post
+title: "Part 1. The miracle of birth"
+author: Eärdil
+modified:
+excerpt: "On the why"
+tags: []
 ---
 
 Im not a savvy programmer. My background is in applied math and I'm mainly interested in data analysis, probability, combinatorics and linear optimization. Most of these disciplines require programming, but I prefer to concentrate more efforts in model design than in algorithm development.
