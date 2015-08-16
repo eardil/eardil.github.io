@@ -25,7 +25,7 @@ It catched my attention the enfasis on Python as a MATLAB killer wannabe by the 
 
 Anyway, basically by the time I finished watching this I knew the path I had to take. So I went on to install the mentioned [Anaconda distribution](http://continuum.io/downloads) that seems to have all the libraries needed for a good head start on data analysis (`scipy`), machine learning (`scikit-learn`), numerical stuff (`numpy`), plotting (`matplotlib`), etc. Installation is completely painless (I installed in Windows and Linux) and you can start right away. I started with this thing called `IPython Notebook`, or `Jupyter`, which is really awesome and I'm actually writing this post on it. 
 
-*Basically it's a Markdown interface, so that means there also $$\LaTeX$$ code!*.
+--Jupyter is a Markdown interface, so that means there also $$\LaTeX$$ code!--
 
 Really, that's it. You just install the distribution, start `IPython Notebook` and click on "New". When you do, say `Hello` for me.
 
