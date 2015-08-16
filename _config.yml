@@ -6,7 +6,7 @@ version:      1.1.1
 author:
   name:       'Irving SW'
   email:      ''
-markdown:     kramdown
+markdown:     rdiscount
 permalink:    pretty
 pygments:     true
 paginate:     5
