@@ -9,7 +9,7 @@ header-img: "img/post-bg-01.jpg"
 
 Im not a savvy programmer. My background is in applied math and I'm mainly interested in data analysis, probability, combinatorics and linear optimization. Most of these disciplines require programming, but I prefer to concentrate more efforts in model design than in algorithm development.
 
-For the past three years I've been using MATLAB in my job and my thesis, so I'm quite attached to it's sintaxis and find it's plots both beautiful and simple. I am well aware of it's limitations for data analysis too (non numeric data, anyone?), but I had learned to live with it. But I've changed jobs since and there's the license cost, so that's a little sad.
+For the past three years I've been using MATLAB in my job and my thesis, so I'm quite attached to it's sintaxis and find it's plots both beautiful and simple. I am well aware of it's limitations for data analysis too (non numeric data, anyone?), and I had learned to live with it. But I've changed jobs since and there's the license cost, so that's a little sad.
 
 On the other hand there's `R`, which I've been using sporadically since I got out of college. This summer I got back to it and got fairly familiar with all the Rmigthy Wickham features such as `dplyr`,`tidyr` and of course `ggplot2`. This is what I've been using in my workflow for the past months and I'll most probably continue to for the foreseable future, but for some reason I'm not enjoying it.
 
