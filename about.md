@@ -3,9 +3,8 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included in Hyde as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+### The Blog
+This site was created as a way to log my first steps into the Python language for simulation, visualization and machine learning. Also, I reserve the right to write about random stuff that I find interesting or relevant.
 
 [Hyde](http://mdo.github.io/hyde) is a [Jekyll](http://jekyllrb.com) theme, designed and built by [@mdo](https://twitter.com/mdo). It's an elegant, open source, and mobile first theme for quickly getting a static site up and running.
 
