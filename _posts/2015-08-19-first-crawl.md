@@ -1,3 +1,11 @@
+---
+layout:     post
+title:      "First crawl"
+subtitle:   "On simulation and loops"
+date:       2015-08-19 12:00:00
+author:     "Eardil Bootstrap"
+header-img: "img/post-bg-01.jpg"
+---
 
 # First crawl
 
