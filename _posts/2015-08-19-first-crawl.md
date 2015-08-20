@@ -3,12 +3,9 @@ layout:     post
 title:      "First crawl"
 subtitle:   "On simulation and loops"
 date:       2015-08-19 12:00:00
-author:     "Eardil Bootstrap"
+author:     "Eardil"
 header-img: "img/post-bg-01.jpg"
 ---
-
-# First crawl
-
 I've never liked learning languages (programming or otherwise). The way I learned english and any phrase I know from any other language (elen sila lumenn omentielvo!) is by watching movies or reading books/blogs. As for programming languages, I have learned by having to solve problems so I'll do just that. In these initial posts I'll learn by hitting walls and finding the most straightforward tools to break them. After that I'll try to find the standard practices for them.
 
 ## The birthday candle problem
