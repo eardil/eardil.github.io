@@ -190,4 +190,4 @@ Now I've completed part 1 of the code. In the next post I'll plot and model the 
 
 ---
 
-Remember that you can get this [IPython Notebook](https://github.com/eardil/Blog_Code/blob/master/2015-08-20-first-crawl/2015-08-20-first-crawl.ipynb) and others at my [Github Page](https://github.com/eardil).
+Remember that you can get this [IPython Notebook](https://github.com/eardil/Blog_Code/blob/master/2015-08-19-first-crawl/2015-08-19-first-crawl.ipynb) and others at my [Github Page](https://github.com/eardil).
