@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      "Second crawl"
 subtitle:   "On simulation and loops"
