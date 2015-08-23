@@ -96,7 +96,7 @@ First let's see that $$e^K$$ looks indeed linear:
     plt.show()
 {% endhighlight %}
 
-![png](/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_15_0.png)
+![png](../img/2015-08-22-second-crawl_files/2015-08-22-second-crawl_15_0.png)
 
 
 Now we need a library for statistical modelling, so lets call `scipy` and it's `stats` package.
@@ -125,7 +125,7 @@ It seems it didn't crash, so let's try to plot it.
     plt.show()
 {% endhighlight %}
 
-![png](/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_21_0.png)
+![png](../img/2015-08-22-second-crawl_files/2015-08-22-second-crawl_21_0.png)
 
 
 Pretty neat, although I would prefer a linear regression function with some kind of predict function or fitted values but I'll leave that for other post.
@@ -143,7 +143,7 @@ By transforming back to the logarithm I get the final product:
     plt.show()
 {% endhighlight %}
 
-![png](/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_23_0.png)
+![png](../img/2015-08-22-second-crawl_files/2015-08-22-second-crawl_23_0.png)
 
 
 ---
