@@ -52,7 +52,7 @@ For plotting, you "create" the plot, then make customizations (like labels and c
     plt.show()
 {% endhighlight %}
 
-![png](/img/2015-08-22-second-crawl_files/2015-08-22-second-crawl_8_0.png)
+![png](../img/2015-08-22-second-crawl_files/2015-08-22-second-crawl_8_0.png)
 
 
 Nice enough. But looks kinda noisy. I'll change the number of samples per run to $$M=1000$$.
@@ -71,7 +71,7 @@ Nice enough. But looks kinda noisy. I'll change the number of samples per run to
     plt.show()
 {% endhighlight %}
 
-![png](http://eardil.github.io/img/2015-08-22-second-crawl_files/2015-08-22-second-crawl_10_0.png)
+![png](../img/2015-08-22-second-crawl_files/2015-08-22-second-crawl_10_0.png)
 
 
 It looks kinda logarithmic. But don't trust my word for it, lets see the graph of the natural logarithm.
