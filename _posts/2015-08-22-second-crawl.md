@@ -8,7 +8,7 @@ header-img: "img/post-bg-01.jpg"
 ---
 In the [last post](http://eardil.github.io/2015/08/19/first-crawl/) I defined a function that perform simulations for the birthday candle problem. This time I want to use it to visualize what happens if I change the parameters of the problem by using this function:
 
-
+{% highlight python %}
     import numpy as np
     
     def candles(n,M):
@@ -21,41 +21,43 @@ In the [last post](http://eardil.github.io/2015/08/19/first-crawl/) I defined a 
                 k+=1
             Kj[j]=k
         return np.mean(Kj)
+{% endhighlight %}
 
 There are several libraries for the things I will do here today (plotting and modelling), but today I'll use the most straightforward ones. In later posts I plan to learn and write about the other libraries more specifically.
 
 ## Plotting
-I need to load another library, which is the "standard" one for plotting and it's called `matplotlib`. The second line is for the graphs to appear right here instead of in a new window.
+I need to load another library, which is the "standard" one for plotting and it's called `matplotlib`. (The second line is for the graphs to appear inside the notebook instead of in a new window but I'll leave it in case someone is using IPython too).
 
-
+{% highlight python %}
     import matplotlib.pyplot as plt
     %matplotlib inline
+{% endhighlight %}
 
 Let's begin by generating for candles from $$1$$ to $$500$$ and sampling 5 times.
 
-
+{% highlight python %}
     M=5
     N=500
     
     K=np.zeros(N)
     for n in range(1,N+1):
         K[n-1]=candles(n,M)
+{% endhighlight %}
+For plotting, you ''create'' the plot, then make customizations (like labels and colors), and then you `show` it.
 
-For plotting, you "create" the plot, then make customizations (like labels and colors), and then you `show` it.
-
-
+{% highlight python %}
     plt.plot(K)
     plt.ylabel('Rounds')
     plt.xlabel('Candles')
     plt.show()
-
+{% endhighlight %}
 
 ![png](2015-08-22-second-crawl_files/2015-08-22-second-crawl_8_0.png)
 
 
 Nice enough. But looks kinda noisy. I'll change the number of samples per run to $$M=1000$$.
 
-
+{% highlight python %}
     M=1000
     N=500
     
@@ -67,16 +69,16 @@ Nice enough. But looks kinda noisy. I'll change the number of samples per run to
     plt.ylabel('Rounds')
     plt.xlabel('Candles')
     plt.show()
-
+{% endhighlight %}
 
 ![png](2015-08-22-second-crawl_files/2015-08-22-second-crawl_10_0.png)
 
 
 It looks kinda logarithmic. But don't trust my word for it, lets see the graph of the natural logaritm.
 
-
+{% highlight python %}
     plt.plot(np.log(range(1,500)),'r')
-
+{% endhighlight %}
 
 
 
@@ -94,40 +96,41 @@ That means we could try to adjust a linear model to the exponential of $$K$$.
 
 First let's see that $$e^K$$ looks indeed linear:
 
-
+{% highlight python %}
     plt.plot(np.exp(K),label="Exp(K)")
     plt.ylabel('Exp(Rounds)')
     plt.xlabel('Candles')
     plt.show()
-
+{% endhighlight %}
 
 ![png](2015-08-22-second-crawl_files/2015-08-22-second-crawl_15_0.png)
 
 
 Now we need a library for statistical modelling, so lets call `scipy` and it's `stats` package.
 
-
+{% highlight python %}
     from scipy import stats as stat
+{% endhighlight %}
 
 Now I'll perform linear regression on $$e^K$$. This means that I'm trying to find numbers $$a,b$$ such that $$e^K = a\times n+b$$ plus some noise.
 
-
+{% highlight python %}
     lin_K = stat.linregress(range(1,N+1), y=np.exp(K))
     print(lin_K)
-
+{% endhighlight %}
     LinregressResult(slope=1.7974155631156676, intercept=-1.2491890297652617, rvalue=0.99070255893402914, pvalue=0.0, stderr=0.011060517470059619)
     
 
 It seems it didn't crash, so let's try to plot it
 
-
+{% highlight python %}
     plt.plot(np.exp(K),label="Average rounds")
     plt.plot(lin_K.intercept+lin_K.slope*range(1,N+1),label="Lin_model",color='r')
     plt.ylabel('Average rounds')
     plt.xlabel('Candles')
     plt.legend(loc=4)
     plt.show()
-
+{% endhighlight %}
 
 ![png](2015-08-22-second-crawl_files/2015-08-22-second-crawl_21_0.png)
 
@@ -137,7 +140,7 @@ Pretty neat, although I would prefer a linear regression function with some kind
 ### Final graph and thoughts
 By transforming back to the logarithm I get the final product:
 
-
+{% highlight python %}
     plt.plot(K,label="Average rounds")
     plt.plot(np.log(lin_K.intercept+lin_K.slope*range(1,N+1)),label="Lin_model",color='r')
     plt.ylabel('Average rounds')
@@ -145,7 +148,7 @@ By transforming back to the logarithm I get the final product:
     plt.title("Rounds ~ log(%s + %s * Candles)" % (lin_K.intercept,lin_K.slope))
     plt.legend(loc=4)
     plt.show()
-
+{% endhighlight %}
 
 ![png](2015-08-22-second-crawl_files/2015-08-22-second-crawl_23_0.png)
 
