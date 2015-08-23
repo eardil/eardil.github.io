@@ -1,12 +1,11 @@
 ﻿---
 layout:     post
-title:      "First crawl"
+title:      "Second crawl"
 subtitle:   "On simulation and loops"
-date:       2015-08-19 12:00:00
+date:       2015-08-22 12:00:00
 author:     "Eardil"
 header-img: "img/post-bg-01.jpg"
 ---
-
 In the [last post](http://eardil.github.io/2015/08/19/first-crawl/) I defined a function that perform simulations for the birthday candle problem. This time I want to use it to visualize what happens if I change the parameters of the problem by using this function:
 
 {% highlight python %}
