@@ -11,7 +11,7 @@ mathjax:      true
 permalink:    pretty
 pygments:     true
 paginate:     5
-encoding: 	  UTF-8
+encoding:     UTF-8
 
 
 kramdown:
