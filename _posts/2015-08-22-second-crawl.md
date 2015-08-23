@@ -52,7 +52,7 @@ For plotting, you "create" the plot, then make customizations (like labels and c
     plt.show()
 {% endhighlight %}
 
-![png]({{ site.url }}/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_8_0.png)
+![png](/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_8_0.png)
 
 
 Nice enough. But looks kinda noisy. I'll change the number of samples per run to $$M=1000$$.
@@ -71,7 +71,7 @@ Nice enough. But looks kinda noisy. I'll change the number of samples per run to
     plt.show()
 {% endhighlight %}
 
-![png]({{ site.url }}/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_10_0.png)
+![png](/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_10_0.png)
 
 
 It looks kinda logarithmic. But don't trust my word for it, lets see the graph of the natural logarithm.
@@ -80,7 +80,7 @@ It looks kinda logarithmic. But don't trust my word for it, lets see the graph o
     plt.plot(np.log(range(1,500)),'r')
 {% endhighlight %}
 
-![png]({{ site.url }}/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_12_1.png)
+![png](/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_12_1.png)
 
 
 That means we could try to adjust a linear model to the exponential of $$K$$.
@@ -96,7 +96,7 @@ First let's see that $$e^K$$ looks indeed linear:
     plt.show()
 {% endhighlight %}
 
-![png]({{ site.url }}/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_15_0.png)
+![png](/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_15_0.png)
 
 
 Now we need a library for statistical modelling, so lets call `scipy` and it's `stats` package.
@@ -125,7 +125,7 @@ It seems it didn't crash, so let's try to plot it.
     plt.show()
 {% endhighlight %}
 
-![png]({{ site.url }}/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_21_0.png)
+![png](/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_21_0.png)
 
 
 Pretty neat, although I would prefer a linear regression function with some kind of predict function or fitted values but I'll leave that for other post.
@@ -143,7 +143,7 @@ By transforming back to the logarithm I get the final product:
     plt.show()
 {% endhighlight %}
 
-![png]({{ site.url }}/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_23_0.png)
+![png](/images/2015-08-22-second-crawl_files/2015-08-22-second-crawl_23_0.png)
 
 
 ---
