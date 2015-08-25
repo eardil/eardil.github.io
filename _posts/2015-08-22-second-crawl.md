@@ -117,7 +117,7 @@ print(lin_K)
 It seems it didn't crash, so let's try to plot it.
 
 {% highlight python %}
-plt.plot(np.exp(K),label="Average rounds")
+	plt.plot(np.exp(K),label="Average rounds")
 plt.plot(lin_K.intercept+lin_K.slope*range(1,N+1),label="Lin_model",color='r')
 plt.ylabel('Average rounds')
 plt.xlabel('Candles')
