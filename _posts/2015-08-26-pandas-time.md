@@ -415,7 +415,7 @@ To select a single column of our data, pandas uses `[]`. So for example we can g
 {% highlight python %}
 cars['mpg'].hist()
 plt.show()
-
+{% endhighlight %}
 
 ![png](http://eardil.github.io/img/2015-08-26-pandas-time_files/2015-08-26-pandas-time_15_0.png)
 
