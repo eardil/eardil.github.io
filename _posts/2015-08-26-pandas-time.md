@@ -9,6 +9,7 @@ header-img: "img/post-bg-01.jpg"
 Before I move on to trying more complicated things that I would do with MATLAB (e.g. 3D plotting), I want to learn the basics of the thing I would like to do on R, namely data crunching and visualization. 
 
 For that I will use [mtcars](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html) database because:
+
 * It's simple.
 * It's standard.
 * [Flowers](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html) are boring.
